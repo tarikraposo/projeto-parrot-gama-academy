@@ -1,3 +1,5 @@
+import { ButtonForm } from "../styled";
+
 type ButtonProps = {
   type: "submit" | "button",
   name: string,
@@ -5,6 +7,6 @@ type ButtonProps = {
 
 export default function FormButton(props: ButtonProps){
   return (
-    <button type={props.type}>{props.name}</button>
+    <ButtonForm type={props.type}>{props.name}</ButtonForm>
   )
 }

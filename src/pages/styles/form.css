@@ -1,20 +1,36 @@
-fieldset {
-  border: none;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-legend {
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.div-logo {
+  margin-bottom: 30px;
+}
+
+h1 {
   font-size: 1.5rem;
-}
-
-input {
-  display: block;
-  font-size: 1.5rem;
-  padding-block: 7px;
-  margin-bottom: 25px;
-  border: 1px solid #909090;
-  border-radius: 10px;
-}
-
-[placeholder] {
+  font-weight: 400;
   text-align: center;
+}
+
+[placeholder], .div-logo {
+  text-align: center;
+}
+
+.link {
+  display: inline-block;
+  color: #555555;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #76BB4C;
 }

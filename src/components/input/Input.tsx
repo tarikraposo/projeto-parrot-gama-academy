@@ -1,3 +1,5 @@
+import { InputForm } from "../styled"
+
 type InputProps = {
   type: string,
   placeholder: string,
@@ -5,6 +7,6 @@ type InputProps = {
 
 export default function Input(props: InputProps){
   return (
-    <input type={props.type} placeholder={props.placeholder}/>
+    <InputForm className="input" type={props.type} placeholder={props.placeholder}/>
   )
 }

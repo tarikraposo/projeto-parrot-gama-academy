@@ -1,20 +1,23 @@
 import Input from "../components/input/Input";
 import logo from "../assets/img-login/logo.png";
-import FormButton from "../components/button/FormButton";
+import FormButton from "../components/buttons/FormButton";
+import { DivContainer, SectionContainer } from "../components/styled";
+
 import "./styles/form.css";
 
 export default function Login(){
   return (
-    <div className="form-container">
-      <div><img src={logo} alt="" /></div>
-      <form>
-        <fieldset>
-          <legend>LOGIN</legend>
+    <SectionContainer>
+      <DivContainer>
+        <div className="div-logo"><img src={logo} alt="" /></div>
+        <form className="form">
+          <h1>LOGIN</h1>
           <Input type="email" placeholder="email" />
           <Input type="password" placeholder="senha" />
           <FormButton type="submit" name="entrar" />
-        </fieldset>
-      </form>
-    </div>
+          <a href="" className="link">cadastre-se</a>
+        </form>
+      </DivContainer>
+    </SectionContainer>
   )
 }
