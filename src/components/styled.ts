@@ -10,6 +10,12 @@ export const ButtonForm = styled.button`
   padding-block: 7px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    color: #034206;
+    background-color: #469615;
+  }
 `;
 
 export const InputForm = styled.input`
@@ -17,7 +23,7 @@ export const InputForm = styled.input`
   display: block;
   font-size: 1.5rem;
   padding-block: 7px;
-  border: 1px solid #909090;
+  border: 2px solid #909090;
   border-radius: 10px;
 
   &[placeholder] {
@@ -57,4 +63,15 @@ export const Form = styled.form`
   flex-direction: column;
   align-items: center;
   gap: 25px;
+`
+
+export const LinkForm = styled.a`
+  display: inline-block;
+  color: #555555;
+  font-size: 1.125rem;
+  text-decoration: none;
+
+  &:hover {
+    color: #76BB4C;
+  }
 `
