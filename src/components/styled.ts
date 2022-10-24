@@ -19,6 +19,10 @@ export const InputForm = styled.input`
   padding-block: 7px;
   border: 1px solid #909090;
   border-radius: 10px;
+
+  &[placeholder] {
+    text-align: center;
+  }
 `
 
 export const DivContainer = styled.div`
@@ -37,4 +41,20 @@ export const SectionContainer = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+    position: absolute;
+    z-index: -1;
+  }
+`
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 `
