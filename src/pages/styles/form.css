@@ -1,0 +1,20 @@
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 1.5rem;
+}
+
+input {
+  display: block;
+  font-size: 1.5rem;
+  padding-block: 7px;
+  margin-bottom: 25px;
+  border: 1px solid #909090;
+  border-radius: 10px;
+}
+
+[placeholder] {
+  text-align: center;
+}
