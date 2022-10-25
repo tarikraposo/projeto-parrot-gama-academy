@@ -81,7 +81,8 @@ export const BtnProfile = styled.a`
   color: #ffffff;
   font-size: 1rem;
   background: #76BB4C;
-  padding: 7px 15px;
+  padding: 7px 20px;
+  border-radius: 30px;
 `
 
 export const HeaderUser = styled.header`
@@ -128,5 +129,44 @@ export const Ulist = styled.ul`
 
   a {
     text-decoration: none;
+  }
+`
+
+type Padding = {
+  padding: string;
+}
+
+export const DivContainerProfile = styled.div`
+  max-width: 700px;
+  margin-inline: auto;
+  padding: ${(props: Padding) => props.padding}
+  border: 1px solid #c5c5c5;
+  border-top: none;
+`
+
+export const DivUser = styled.div`
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  align-items: start;
+  gap: 30px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    justify-self: center;
+  }
+
+  p {
+    color: #76BB4C;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  span {
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
 `
