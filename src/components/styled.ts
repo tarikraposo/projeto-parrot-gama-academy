@@ -75,3 +75,11 @@ export const LinkForm = styled.a`
     color: #76BB4C;
   }
 `
+
+export const BtnProfile = styled.a`
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1rem;
+  background: #76BB4C;
+  padding: 7px 15px;
+`
