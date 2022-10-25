@@ -83,3 +83,5 @@ export const BtnProfile = styled.a`
   background: #76BB4C;
   padding: 7px 15px;
 `
+
+export const Header = styled.a``
