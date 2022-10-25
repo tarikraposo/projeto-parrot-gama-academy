@@ -4,9 +4,13 @@ export const Forms = styled.form `
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: center;
+  flex: 1;
 
   label {
+
     margin-bottom: 14px;
+    
   }
   input {
     width: 542px;
@@ -26,3 +30,4 @@ export const Forms = styled.form `
   }
 
 `
+

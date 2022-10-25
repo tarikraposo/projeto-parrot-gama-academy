@@ -12,15 +12,16 @@ export const Container = styled.div`
     main {
         flex: 1;
         display: flex;
-        align-items: baseline;
-        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
         border: 1px solid #C5C5C5;
         width: 700px;
         margin: 0 auto;
         
         
 
-        div {
+        .posts {
             margin-top: 45px;
             display: flex;
             align-items: flex-start;

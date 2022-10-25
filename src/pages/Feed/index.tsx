@@ -1,5 +1,6 @@
 import React from 'react'
 import Willy from "../../assets/Willy.png";
+import FeedList from '../../components/feedList';
 import { Header } from "../../components/header";
 import FeedForm from '../../components/textarea';
 import * as S from "./styles";
@@ -15,12 +16,18 @@ const Feed = ({children}:FeedProps) => {
             <Header></Header>
             <main>
                 {children}
-               <div>
+               <div className='posts'>
                     <img src={Willy} alt="Profile icon"/>
                     <FeedForm/>
                 </div> 
+                <FeedList>
+            
+                </FeedList>
             </main>
+            
         </S.Container>
+        
+
     );
 }
 

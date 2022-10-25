@@ -1,4 +1,3 @@
-
 import logoParrot from "../../assets/logo-header.png";
 import { LogoHeader } from "./logo.style";
 
