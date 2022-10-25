@@ -1,14 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import {RouterProvider} from "react-router-dom";
-
-import "./index.css";
-import { router } from "./routes";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import {Main} from './pages/Main'
+import GlobalStyle from './styles/global'
+import pkg from 'semantic-ui-react/package.json'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-      <section>
-        <RouterProvider router={router}/>
-      </section>
+    <GlobalStyle/>
+    <Main/>
   </React.StrictMode>
 )

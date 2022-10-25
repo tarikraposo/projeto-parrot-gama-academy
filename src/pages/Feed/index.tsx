@@ -1,11 +1,12 @@
-
+import React from 'react'
+import Willy from "../../assets/Willy.png";
 import { Header } from "../../components/header";
-import * as S from "./styles"
+import FeedForm from '../../components/textarea';
+import * as S from "./styles";
 
 type FeedProps = {
     children: React.ReactNode;
 }
-
 
 const Feed = ({children}:FeedProps) => {
     return (
@@ -14,6 +15,10 @@ const Feed = ({children}:FeedProps) => {
             <Header></Header>
             <main>
                 {children}
+               <div>
+                    <img src={Willy} alt="Profile icon"/>
+                    <FeedForm/>
+                </div> 
             </main>
         </S.Container>
     );

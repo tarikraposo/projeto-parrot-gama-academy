@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle `
         height: 100%;
     }
     body {
-        background-color: #F8FDFF;
         font-family: 'Questrial', sans-serif;
     }
 
@@ -29,8 +28,6 @@ const GlobalStyle = createGlobalStyle `
     }
 
 `;
-
-
 
 
 export default GlobalStyle;
