@@ -84,4 +84,49 @@ export const BtnProfile = styled.a`
   padding: 7px 15px;
 `
 
-export const Header = styled.a``
+export const HeaderUser = styled.header`
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+`
+
+export const Navigation = styled.nav`
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-inline: auto;
+  padding: 10px;
+`
+
+export const ImgLogo = styled.img`
+  max-width: 240px;
+`
+
+export const Ulist = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 7px;
+
+  li:first-child {
+    font-size: 1.5rem;
+    border-right: 2px solid #76BB4C;
+    padding-right: 5px;
+  }
+
+  li:first-child a {
+    color: #76BB4C;
+  }
+
+  li:last-child a {
+    color: #6033AA;
+  }
+
+  a {
+    text-decoration: none;
+  }
+`
