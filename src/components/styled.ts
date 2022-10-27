@@ -75,13 +75,24 @@ export const LinkForm = styled.a`
   }
 `
 
+interface BtnProps {
+  background: string;
+  padding: string;
+  hover?: string;
+}
+
 export const BtnProfile = styled.a`
   display: inline-block;
   color: #ffffff;
   font-size: 1rem;
-  background: #76BB4C;
-  padding: 7px 20px;
+  background: ${(props: BtnProps) => props.background}
+  padding: ${(props: BtnProps) => props.padding}
   border-radius: 30px;
+  cursor: pointer;
+
+  &:hover {
+    background: ${(props: BtnProps) => props.hover}
+  }
 `
 
 export const HeaderUser = styled.header`
@@ -199,5 +210,24 @@ export const DivPost = styled.div`
   p {
     font-size: 1rem;
     margin-top: 10px;
+  }
+`
+
+export const DivPostFeed = styled.div`
+  div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 25px;
+
+    a {
+      grid-column: 2;
+      justify-self: end;
+    }
+
+    textarea {
+      border: 1px solid #8BC34A;
+      border-radius: 10px;
+      resize: none;
+    }
   }
 `

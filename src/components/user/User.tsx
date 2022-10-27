@@ -1,7 +1,6 @@
 import ProfilePhoto from "../../assets/img-general/profile-photo.png";
-import ProfileButton from "../buttons/ProfileButton";
 import Span from "../span/Span";
-import { DivUser } from "../styled";
+import { BtnProfile, DivUser } from "../styled";
 
 export default function User() {
   return (
@@ -11,7 +10,7 @@ export default function User() {
         <p>Nome Sobrenome</p>
         <Span names={[`apê82`, `user@mail.com`, `00 publicações`]}/>
       </div>
-      <ProfileButton type="submit" name="editar perfil" />
+      <BtnProfile background="#76BB4C;" padding="7px 20px;" type="submit">editar perfil</BtnProfile>
     </DivUser>
   )
 }
