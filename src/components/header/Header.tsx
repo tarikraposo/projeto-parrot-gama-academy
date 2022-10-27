@@ -7,11 +7,11 @@ export default function Header() {
       <HeaderUser>
         <Navigation>
           <div>
-            <ImgLogo src={LogoHeader} alt="" />
+            <a href="/feed"><ImgLogo src={LogoHeader} alt="" /></a>
           </div>
           <Ulist>
-            <li><a href="">Olá, Usuário</a></li>
-            <li><a href="">Sair</a></li>
+            <li><a href="/profile">Olá, Usuário</a></li>
+            <li><a href="/login">Sair</a></li>
           </Ulist>
         </Navigation>
     </HeaderUser>

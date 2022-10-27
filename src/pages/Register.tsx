@@ -1,7 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/img-login/logo.png";
-import FormButton from "../components/buttons/FormButton";
-import { DivContainer, Form, InputForm, SectionContainer } from "../components/styled";
+import { ButtonForm, DivContainer, Form, InputForm, SectionContainer } from "../components/styled";
 import registerUser from "../services/mainApi/registerUser";
 
 import "./styles/form.css";
@@ -42,7 +41,7 @@ export default function Register(){
           <InputForm type="password" placeholder="confirmar senha" value={confirmPassword} onChange= {(event) =>setConfirmPassword(event.target.value)}/>
           <InputForm type="text" placeholder="unidade/apartamento" value={apartment} onChange={(event) => setapartment(event.target.value)}/>
           <InputForm type="text" placeholder="link da foto"value={link} onChange={(event) => setLink(event.target.value)}/>
-          <FormButton type="submit" name="entrar" />
+          <ButtonForm type="submit">entrar</ButtonForm>
         </Form>
       </DivContainer>
     </SectionContainer>
