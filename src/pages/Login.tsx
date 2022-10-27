@@ -23,7 +23,7 @@ export default function Login(){
           <InputForm type="email" placeholder="email" value={email} onChange={(event) => setEmail(event.target.value)}/>
           <InputForm type="password" placeholder="senha" value={password} onChange={(event) => setPassword(event.target.value)}/>
           <FormButton type="submit" name="entrar" />
-          <LinkForm href="/cadastrar">cadastre-se</LinkForm>
+          <LinkForm href="/users">cadastre-se</LinkForm>
         </Form>
       </DivContainer>
     </SectionContainer>

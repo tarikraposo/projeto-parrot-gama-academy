@@ -13,7 +13,6 @@ export const ButtonForm = styled.button`
   cursor: pointer;
 
   &:hover {
-    color: #034206;
     background-color: #469615;
   }
 `;
@@ -136,12 +135,17 @@ type Padding = {
   padding: string;
 }
 
-export const DivContainerProfile = styled.div`
+export const MainProfile = styled.main`
   max-width: 700px;
+  height: 100vh;
   margin-inline: auto;
+  border-left: 1px solid #c5c5c5;
+  border-right: 1px solid #c5c5c5;
+`
+
+export const DivContainerProfile = styled.div`
   padding: ${(props: Padding) => props.padding}
-  border: 1px solid #c5c5c5;
-  border-top: none;
+  border-bottom: 1px solid #c5c5c5;
 `
 
 export const DivUser = styled.div`
@@ -168,5 +172,32 @@ export const DivUser = styled.div`
   span {
     font-size: 1rem;
     margin-bottom: 10px;
+  }
+`
+
+export const DivPost = styled.div`
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  margin-inline: auto;
+  padding: 35px 25px 45px 25px;
+  border-bottom: 1px solid #c5c5c5;
+
+  h2 {
+    color: #76BB4C;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  span {
+    color: #909090;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-top: 10px;
   }
 `

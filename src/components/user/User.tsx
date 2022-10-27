@@ -9,9 +9,9 @@ export default function User() {
       <img src={ProfilePhoto} alt="" />
       <div>
         <p>Nome Sobrenome</p>
-        <Span names={["apê 82", "user@mail.com"]}/>
+        <Span names={[`apê82`, `user@mail.com`, `00 publicações`]}/>
       </div>
-      <ProfileButton type="submit" name="editar" />
+      <ProfileButton type="submit" name="editar perfil" />
     </DivUser>
   )
 }
