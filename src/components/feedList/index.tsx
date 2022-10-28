@@ -1,60 +1,34 @@
 import Willy from "../../assets/willy.png";
+import { Feeds } from "../../pages/Feed";
 import Container from "./styles";
 
-
-let date: Date = new Date();
-
-const feedList = [
-
-	{	
-		postID: 1,
-		autorId:1,
-		name: "Pedro",
-        date,
-		apartament: 101,
-		message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laboriosam."
-
-	},
-    {	
-		postID: 2,
-		autorId:1,
-		name: "Pedro",
-        date,
-		apartament: 101,
-		message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laboriosam."
-
-	},
-    
-    
-]
-
-
-
 type FeedListProps = {
-    children: React.ReactNode;
+  feedList: Feeds[];
+};
 
-}
-
-const FeedList = (props:FeedListProps)=> {
-    return (
-        <Container>
-            <div className="postContainer">
-                {feedList.map((post) => {
-                    return(
-                        <div className="feedPost">
-                            <img src={Willy} alt="Profile icon"/>
-                            <div key={post.postID}>
-                                <p className="name">{post.name} - {post.apartament}</p>
-                                <span className="date">25/10/2022</span>
-                                <p className="message">{post.message}</p>
-                            </div>
-                        </div>
-                                                
-                    );
-                })}
-            </div>
-        </Container>
-    );
+const FeedList = ({ feedList }: FeedListProps) => {
+  return (
+    <Container>
+      <div className="postContainer">
+        {feedList
+          .sort((a, b) => b.date - a.date)
+          .map((feed) => {
+            return (
+              <div key={feed.postID} className="feedPost">
+                <img src={Willy} alt="Profile icon" />
+                <div key={feed.postID}>
+                  <p className="name">
+                    {feed.name} - {feed.apartament}
+                  </p>
+                  <span className="date">{feed.date.toDateString()}</span>
+                  <p className="message">{feed.message}</p>
+                </div>
+              </div>
+            );
+          })}
+      </div>
+    </Container>
+  );
 };
 
 export default FeedList;
